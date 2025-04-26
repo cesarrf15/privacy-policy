@@ -1,30 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Política de Privacidade - Calculadora DAC-Rubi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - DAC-Rubi Calculator</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
         h1 { color: #2c3e50; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        a { color: #3498db; }
+        .lang-selector { margin: 20px 0; text-align: center; }
+        .lang-btn { 
+            margin: 0 5px; 
+            padding: 5px 10px;
+            background: #f0f0f0;
+            border: 1px solid #ddd;
+            cursor: pointer;
+        }
+        .lang-btn:hover { background: #e0e0e0; }
     </style>
 </head>
 <body>
-    <h1>Política de Privacidade</h1>
-    <p><strong>Última atualização:</strong> 26 de julho de 2024</p>
-    
-    <p>O aplicativo <strong>Calculadora DAC-Rubi</strong> não coleta, armazena ou compartilha quaisquer dados do usuário.</p>
-    
-    <h2>1. Dados Processados</h2>
-    <ul>
-        <li>Todos os cálculos são realizados <strong>localmente</strong> no dispositivo.</li>
-        <li>Históricos de resultados são armazenados apenas no dispositivo ou em arquivos exportados manualmente para a pasta de downloads.</li>
-    </ul>
-    
-    <h2>2. Permissões</h2>
-    <p><strong>Armazenamento (opcional):</strong> Usado apenas quando você exporta resultados manualmente. O app não acessa outros arquivos sem sua permissão.</p>
-    
-    <h2>3. Contato</h2>
-    <p>Para dúvidas, envie um e-mail para: <a href="mailto:cesarrfernandes@fisica.ufc.br">cesarrfernandes@fisica.ufc.br</a></p>
+    <div class="lang-selector">
+        <button class="lang-btn" onclick="changeLanguage('pt')">Português</button>
+        <button class="lang-btn" onclick="changeLanguage('en')">English</button>
+        <button class="lang-btn" onclick="changeLanguage('es')">Español</button>
+        <button class="lang-btn" onclick="changeLanguage('ru')">Русский</button>
+        <button class="lang-btn" onclick="changeLanguage('zh')">中文</button>
+    </div>
+
+    <div id="content">
+        <!-- O conteúdo será inserido aqui via JavaScript -->
+    </div>
+
+    <script>
+        // Conteúdo multilíngue
+        const policies = {
+            "pt": `
+                <h1>Política de Privacidade</h1>
+                <p><strong>Última atualização:</strong> Julho 2024</p>
+                <p>O aplicativo <strong>Calculadora DAC-Rubi</strong>:</p>
+                <ul>
+                    <li>Não coleta, armazena ou compartilha dados do usuário</li>
+                    <li>Processa todos os cálculos localmente no dispositivo</li>
+                    <li>Armazena resultados apenas quando explicitamente solicitado</li>
+                </ul>
+                <p><strong>Permissões:</strong> Armazenamento (apenas para exportar resultados manualmente)</p>
+                <p><strong>Contato:</strong> cesarrfernandes@fisica.ufc.br</p>
+            `,
+            "en": `
+                <h1>Privacy Policy</h1>
+                <p><strong>Last Updated:</strong> July 2024</p>
+                <p>The <strong>DAC-Rubi Calculator</strong>:</p>
+                <ul>
+                    <li>Does not collect, store, or share user data</li>
+                    <li>Processes all calculations locally on the device</li>
+                    <li>Stores results only when explicitly requested</li>
+                </ul>
+                <p><strong>Permissions:</strong> Storage (only to manually export results)</p>
+                <p><strong>Contact:</strong> cesarrfernandes@fisica.ufc.br</p>
+            `,
+            "es": `
+                <h1>Política de Privacidad</h1>
+                <p><strong>Última actualización:</strong> Julio 2024</p>
+                <p>La <strong>Calculadora DAC-Rubi</strong>:</p>
+                <ul>
+                    <li>No recopila, almacena ni comparte datos del usuario</li>
+                    <li>Procesa todos los cálculos localmente en el dispositivo</li>
+                    <li>Almacena resultados solo cuando se solicita explícitamente</li>
+                </ul>
+                <p><strong>Permisos:</strong> Almacenamiento (solo para exportar resultados manualmente)</p>
+                <p><strong>Contacto:</strong> cesarrfernandes@fisica.ufc.br</p>
+            `,
+            "ru": `
+                <h1>Политика конфиденциальности</h1>
+                <p><strong>Последнее обновление:</strong> Июль 2024</p>
+                <p>Приложение <strong>Калькулятор DAC-Rubi</strong>:</p>
+                <ul>
+                    <li>Не собирает, не хранит и не передает пользовательские данные</li>
+                    <li>Все вычисления выполняются локально на устройстве</li>
+                    <li>Результаты сохраняются только по явному запросу</li>
+                </ul>
+                <p><strong>Разрешения:</strong> Хранение (только для ручного экспорта результатов)</p>
+                <p><strong>Контакт:</strong> cesarrfernandes@fisica.ufc.br</p>
+            `,
+            "zh": `
+                <h1>隐私政策</h1>
+                <p><strong>最后更新:</strong> 2024年7月</p>
+                <p><strong>DAC-Rubi计算器</strong>:</p>
+                <ul>
+                    <li>不收集、存储或共享用户数据</li>
+                    <li>所有计算均在设备本地处理</li>
+                    <li>仅按明确请求存储结果</li>
+                </ul>
+                <p><strong>权限:</strong> 存储 (仅用于手动导出结果)</p>
+                <p><strong>联系:</strong> cesarrfernandes@fisica.ufc.br</p>
+            `
+        };
+
+        // Detecta o idioma do navegador e mostra o conteúdo correspondente
+        function loadLanguage() {
+            const userLang = navigator.language || navigator.userLanguage;
+            const langCode = userLang.split('-')[0];
+            document.getElementById('content').innerHTML = policies[langCode] || policies['en'];
+        }
+
+        // Alterna entre idiomas manualmente
+        function changeLanguage(lang) {
+            document.getElementById('content').innerHTML = policies[lang] || policies['en'];
+        }
+
+        // Carrega o idioma ao abrir a página
+        window.onload = loadLanguage;
+    </script>
 </body>
 </html>
