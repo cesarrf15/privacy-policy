@@ -1,18 +1,148 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-    <title>隐私政策 - DAC-Ruby 计算器</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私政策 - DAC-Rubi计算器</title>
+    <style>
+        :root {
+            --primary-color: #4a6da7;
+            --secondary-color: #6c8fc7;
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+            --card-bg: #fff;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-top: 25px;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .lang-selector {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .lang-btn:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+        
+        .current-lang {
+            background: var(--secondary-color);
+            font-weight: bold;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+                margin: 20px auto;
+            }
+            
+            .lang-selector {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>隐私政策</h1>
-    <p><strong>最后更新:</strong> 2024年6月</p>
-    
-    <p><strong>DAC-Ruby计算器</strong>应用:</p>
-    <ul>
-        <li>不收集、存储或共享个人数据</li>
-        <li>所有计算均在设备本地处理</li>
-        <li>不需要互联网连接</li>
-        <li>结果仅在用户明确请求时保存</li>
-    </ul>
+    <div class="container">
+        <div class="lang-selector">
+            <a href="en.html" class="lang-btn">English</a>
+            <a href="pt.html" class="lang-btn">Português</a>
+            <a href="es.html" class="lang-btn">Español</a>
+            <a href="ru.html" class="lang-btn">Русский</a>
+            <a href="zh.html" class="lang-btn current-lang">中文</a>
+        </div>
+        
+        <h1>隐私政策</h1>
+        <p><strong>最后更新:</strong> <time datetime="2024-06-01">2024年6月1日</time></p>
+        
+        <h2>1. 数据收集</h2>
+        <p><strong>DAC-Rubi计算器</strong>应用完全以隐私为核心设计:</p>
+        <ul>
+            <li>🔒 <strong>零数据收集</strong>: 我们不要求也不存储任何个人数据</li>
+            <li>📱 <strong>本地处理</strong>: 所有计算完全在您的设备上进行</li>
+            <li>🌐 <strong>无追踪</strong>: 我们不使用任何分析或追踪工具</li>
+        </ul>
+        
+        <h2>2. 数据存储</h2>
+        <p>关于信息存储:</p>
+        <ul>
+            <li>💾 <strong>完全控制</strong>: 结果仅在您明确要求时保存</li>
+            <li>📁 <strong>仅限本地</strong>: 文件仅存储在您设备的下载文件夹中</li>
+            <li>🔄 <strong>无同步</strong>: 没有云备份或外部服务器存储</li>
+        </ul>
+        
+        <h2>3. 权限</h2>
+        <p>本应用仅需要:</p>
+        <ul>
+            <li>📁 <strong>存储权限</strong>: 仅用于在您需要时导出结果</li>
+            <li>🔋 <strong>无多余权限</strong>: 我们不访问联系人、位置或其他敏感数据</li>
+        </ul>
+        
+        <footer>
+            <p>© 2024 塞萨尔·费尔南德斯 - UFC物理系</p>
+            <p><strong>联系方式:</strong> cesarrfernandes@fisica.ufc.br</p>
+        </footer>
+    </div>
 </body>
 </html>
