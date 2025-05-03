@@ -1,19 +1,148 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Política de Privacidad - Calculadora DAC-Rubi</title>
+    <style>
+        :root {
+            --primary-color: #4a6da7;
+            --secondary-color: #6c8fc7;
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+            --card-bg: #fff;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-top: 25px;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .lang-selector {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .lang-btn:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+        
+        .current-lang {
+            background: var(--secondary-color);
+            font-weight: bold;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+                margin: 20px auto;
+            }
+            
+            .lang-selector {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Estrutura idêntica, com texto em espanhol -->
-    <h1>Política de Privacidad</h1>
-    <p><strong>Última actualización:</strong> Junio 2024</p>
-    
-    <p>La aplicación <strong>Calculadora DAC-Rubi</strong>:</p>
-    <ul>
-        <li>No recopila, almacena ni comparte datos personales</li>
-        <li>Todos los cálculos se procesan localmente en el dispositivo</li>
-        <li>No requiere conexión a internet</li>
-        <li>Los resultados se almacenan solo cuando el usuario lo solicita explícitamente</li>
-    </ul>
+    <div class="container">
+        <div class="lang-selector">
+            <a href="en.html" class="lang-btn">English</a>
+            <a href="pt.html" class="lang-btn">Português</a>
+            <a href="es.html" class="lang-btn current-lang">Español</a>
+            <a href="ru.html" class="lang-btn">Русский</a>
+            <a href="zh.html" class="lang-btn">中文</a>
+        </div>
+        
+        <h1>Política de Privacidad</h1>
+        <p><strong>Última actualización:</strong> <time datetime="2024-06-01">1 de Junio de 2024</time></p>
+        
+        <h2>1. Recopilación de Datos</h2>
+        <p>La aplicación <strong>Calculadora DAC-Rubi</strong> fue desarrollada con un enfoque absoluto en la privacidad:</p>
+        <ul>
+            <li>🔒 <strong>Cero recopilación</strong>: No solicitamos ni almacenamos datos personales</li>
+            <li>📱 <strong>Procesamiento local</strong>: Todos los cálculos se realizan completamente en tu dispositivo</li>
+            <li>🌐 <strong>Sin rastreo</strong>: No utilizamos analytics ni herramientas de tracking</li>
+        </ul>
+        
+        <h2>2. Almacenamiento</h2>
+        <p>En relación al almacenamiento de información:</p>
+        <ul>
+            <li>💾 <strong>Control total</strong>: Los resultados solo se guardan cuando tú lo solicitas explícitamente</li>
+            <li>📁 <strong>Local solamente</strong>: Los archivos se almacenan únicamente en la carpeta de descargas de tu dispositivo</li>
+            <li>🔄 <strong>Sin sincronización</strong>: No hay copias de seguridad en la nube ni en servidores externos</li>
+        </ul>
+        
+        <h2>3. Permisos</h2>
+        <p>La aplicación solo requiere:</p>
+        <ul>
+            <li>📁 <strong>Almacenamiento</strong>: Exclusivamente para exportar resultados cuando lo desees</li>
+            <li>🔋 <strong>Ningún permiso innecesario</strong>: No accedemos a contactos, ubicación u otros datos sensibles</li>
+        </ul>
+        
+        <footer>
+            <p>© 2024 César Fernandes - Departamento de Física UFC</p>
+            <p><strong>Contacto:</strong> cesarrfernandes@fisica.ufc.br</p>
+        </footer>
+    </div>
 </body>
 </html>
