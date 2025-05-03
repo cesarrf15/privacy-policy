@@ -5,50 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Política de Privacidade - Calculadora DAC-Rubi</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
+        :root {
+            --primary-color: #4a6da7;
+            --secondary-color: #6c8fc7;
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+            --card-bg: #fff;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        h1 { color: #2c3e50; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        .lang-selector { margin: 20px 0; text-align: center; }
-        .lang-btn { 
-            margin: 0 5px; 
-            padding: 5px 10px;
-            background: #f0f0f0;
-            border: 1px solid #ddd;
+        
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-top: 25px;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .lang-selector {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 20px;
             cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .lang-btn:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+        
+        .current-lang {
+            background: var(--secondary-color);
+            font-weight: bold;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+                margin: 20px auto;
+            }
+            
+            .lang-selector {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="lang-selector">
-        <a href="en.html" class="lang-btn">English</a>
-        <a href="pt.html" class="lang-btn">Português</a>
-        <a href="es.html" class="lang-btn">Español</a>
-        <a href="ru.html" class="lang-btn">Русский</a>
-        <a href="zh.html" class="lang-btn">中文</a>
+    <div class="container">
+        <div class="lang-selector">
+            <a href="en.html" class="lang-btn">English</a>
+            <a href="pt.html" class="lang-btn current-lang">Português</a>
+            <a href="es.html" class="lang-btn">Español</a>
+            <a href="ru.html" class="lang-btn">Русский</a>
+            <a href="zh.html" class="lang-btn">中文</a>
+        </div>
+        
+        <h1>Política de Privacidade</h1>
+        <p><strong>Última atualização:</strong> <time datetime="2024-06-01">1º de Junho de 2024</time></p>
+        
+        <h2>1. Coleta de Dados</h2>
+        <p>O aplicativo <strong>Calculadora DAC-Rubi</strong> foi desenvolvido com foco absoluto na privacidade:</p>
+        <ul>
+            <li>🔒 <strong>Zero coleta</strong>: Não solicitamos nem armazenamos dados pessoais</li>
+            <li>📱 <strong>Processamento local</strong>: Todos os cálculos ocorrem inteiramente no seu dispositivo</li>
+            <li>🌐 <strong>Sem rastreio</strong>: Não utilizamos analytics ou ferramentas de tracking</li>
+        </ul>
+        
+        <h2>2. Armazenamento</h2>
+        <p>Em relação ao armazenamento de informações:</p>
+        <ul>
+            <li>💾 <strong>Controle total</strong>: Resultados só são salvos quando você explicitamente solicita</li>
+            <li>📁 <strong>Local apenas</strong>: Arquivos são armazenados somente na pasta de downloads do seu dispositivo</li>
+            <li>🔄 <strong>Sem sincronização</strong>: Não há backup em nuvem ou servidores externos</li>
+        </ul>
+        
+        <h2>3. Permissões</h2>
+        <p>O aplicativo requer apenas:</p>
+        <ul>
+            <li>📁 <strong>Armazenamento</strong>: Exclusivamente para exportar resultados quando desejado</li>
+            <li>🔋 <strong>Nenhuma permissão desnecessária</strong>: Não acessamos contatos, localização ou outros dados sensíveis</li>
+        </ul>
+        
+        <footer>
+            <p>© 2024 César Fernandes - Departamento de Física UFC</p>
+            <p><strong>Contato:</strong> cesarrfernandes@fisica.ufc.br</p>
+        </footer>
     </div>
-
-    <h1>Política de Privacidade</h1>
-    <p><strong>Última atualização:</strong> Junho 2024</p>
-    
-    <p>O aplicativo <strong>Calculadora DAC-Rubi</strong>:</p>
-    <ul>
-        <li>Não coleta, armazena ou compartilha dados pessoais</li>
-        <li>Todos os cálculos são processados localmente no dispositivo</li>
-        <li>Não requer conexão com internet para funcionar</li>
-        <li>Os resultados são armazenados apenas quando explicitamente solicitado pelo usuário</li>
-    </ul>
-
-    <p><strong>Permissões necessárias:</strong></p>
-    <ul>
-        <li>Armazenamento (apenas para exportar resultados manualmente)</li>
-    </ul>
-
-    <p><strong>Contato:</strong> cesarrfernandes@fisica.ufc.br</p>
 </body>
 </html>
