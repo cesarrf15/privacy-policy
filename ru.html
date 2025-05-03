@@ -1,18 +1,148 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Политика конфиденциальности - Калькулятор DAC-Ruby</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Политика конфиденциальности - Калькулятор DAC-Rubi</title>
+    <style>
+        :root {
+            --primary-color: #4a6da7;
+            --secondary-color: #6c8fc7;
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+            --card-bg: #fff;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-top: 25px;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .lang-selector {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .lang-btn {
+            padding: 8px 16px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .lang-btn:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+        
+        .current-lang {
+            background: var(--secondary-color);
+            font-weight: bold;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+                margin: 20px auto;
+            }
+            
+            .lang-selector {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Политика конфиденциальности</h1>
-    <p><strong>Последнее обновление:</strong> Июнь 2024</p>
-    
-    <p>Приложение <strong>Калькулятор DAC-Ruby</strong>:</p>
-    <ul>
-        <li>Не собирает, не хранит и не передает персональные данные</li>
-        <li>Все вычисления выполняются локально на устройстве</li>
-        <li>Не требует подключения к интернету</li>
-        <li>Результаты сохраняются только по явному запросу пользователя</li>
-    </ul>
+    <div class="container">
+        <div class="lang-selector">
+            <a href="en.html" class="lang-btn">English</a>
+            <a href="pt.html" class="lang-btn">Português</a>
+            <a href="es.html" class="lang-btn">Español</a>
+            <a href="ru.html" class="lang-btn current-lang">Русский</a>
+            <a href="zh.html" class="lang-btn">中文</a>
+        </div>
+        
+        <h1>Политика конфиденциальности</h1>
+        <p><strong>Последнее обновление:</strong> <time datetime="2024-06-01">1 июня 2024 года</time></p>
+        
+        <h2>1. Сбор данных</h2>
+        <p>Приложение <strong>Калькулятор DAC-Rubi</strong> разработано с абсолютным вниманием к конфиденциальности:</p>
+        <ul>
+            <li>🔒 <strong>Нулевой сбор данных</strong>: Мы не запрашиваем и не храним личные данные</li>
+            <li>📱 <strong>Локальная обработка</strong>: Все вычисления выполняются полностью на вашем устройстве</li>
+            <li>🌐 <strong>Отсутствие отслеживания</strong>: Мы не используем аналитику или инструменты трекинга</li>
+        </ul>
+        
+        <h2>2. Хранение данных</h2>
+        <p>В отношении хранения информации:</p>
+        <ul>
+            <li>💾 <strong>Полный контроль</strong>: Результаты сохраняются только по вашему явному запросу</li>
+            <li>📁 <strong>Только локально</strong>: Файлы сохраняются исключительно в папке загрузок вашего устройства</li>
+            <li>🔄 <strong>Нет синхронизации</strong>: Не производится резервное копирование в облако или на внешние серверы</li>
+        </ul>
+        
+        <h2>3. Разрешения</h2>
+        <p>Приложение запрашивает только:</p>
+        <ul>
+            <li>📁 <strong>Доступ к хранилищу</strong>: Исключительно для экспорта результатов по вашему желанию</li>
+            <li>🔋 <strong>Никаких лишних разрешений</strong>: Мы не получаем доступ к контактам, местоположению или другим конфиденциальным данным</li>
+        </ul>
+        
+        <footer>
+            <p>© 2024 Сезар Фернандес - Физический факультет UFC</p>
+            <p><strong>Контакт:</strong> cesarrfernandes@fisica.ufc.br</p>
+        </footer>
+    </div>
 </body>
 </html>
