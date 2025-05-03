@@ -1,23 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Mesmo head do pt.html, apenas mude title e lang -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - DAC-Ruby Calculator</title>
+    <style>
+        :root {
+            --primary-color: #4a6da7;
+            --secondary-color: #6c8fc7;
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+            --card-bg: #fff;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+        
+        /* Maintain identical CSS structure for all versions */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        /* ... (keep same CSS as Portuguese version) ... */
+    </style>
 </head>
 <body>
-    <!-- Mesmo seletor de idiomas -->
-
-    <h1>Privacy Policy</h1>
-    <p><strong>Last Updated:</strong> June 2024</p>
-    
-    <p>The <strong>DAC-Ruby Calculator</strong> app:</p>
-    <ul>
-        <li>Does not collect, store or share personal data</li>
-        <li>All calculations are processed locally on the device</li>
-        <li>Does not require internet connection</li>
-        <li>Results are stored only when explicitly requested by the user</li>
-    </ul>
-
-    <!-- Restante igual, traduzido -->
+    <div class="container">
+        <div class="lang-selector">
+            <a href="en.html" class="lang-btn current-lang">English</a>
+            <a href="pt.html" class="lang-btn">Português</a>
+            <a href="es.html" class="lang-btn">Español</a>
+            <a href="ru.html" class="lang-btn">Русский</a>
+            <a href="zh.html" class="lang-btn">中文</a>
+        </div>
+        
+        <h1>Privacy Policy</h1>
+        <p><strong>Last Updated:</strong> <time datetime="2024-06-01">June 1, 2024</time></p>
+        
+        <h2>1. Data Collection</h2>
+        <p>The <strong>DAC-Ruby Calculator</strong> is built with privacy-first principles:</p>
+        <ul>
+            <li>🔒 <strong>No data collection</strong>: We don't request or store personal information</li>
+            <li>📱 <strong>Local processing</strong>: All computations happen entirely on your device</li>
+            <li>🌐 <strong>No tracking</strong>: Zero analytics or third-party tracking tools</li>
+        </ul>
+        
+        <h2>2. Storage</h2>
+        <p>Regarding data storage:</p>
+        <ul>
+            <li>💾 <strong>Full control</strong>: Results are saved only at your explicit request</li>
+            <li>📁 <strong>Device-only</strong>: Files are stored solely in your device's download folder</li>
+            <li>🔄 <strong>No sync</strong>: We don't backup to cloud services</li>
+        </ul>
+        
+        <h2>3. Permissions</h2>
+        <p>The app requires only:</p>
+        <ul>
+            <li>📁 <strong>Storage</strong>: Exclusively for manual result exports</li>
+            <li>🔋 <strong>Minimal access</strong>: No contacts, location or sensitive data access</li>
+        </ul>
+        
+        <footer>
+            <p>© 2024 César Fernandes - Physics Department UFC</p>
+            <p><strong>Contact:</strong> cesarrfernandes@fisica.ufc.br</p>
+        </footer>
+    </div>
 </body>
 </html>
